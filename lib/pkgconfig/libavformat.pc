@@ -1,0 +1,14 @@
+prefix=../../VPlayer_library/jni/ffmpeg-build/armeabi
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 56.40.101
+Requires: libavcodec >= 56.49.101, libswresample >= 1.2.101, libavutil >= 54.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lvo-amrwbenc -lvo-aacenc -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/libass/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/fribidi/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -lass -lm -lfribidi -lfreetype -lm -lz -pthread -lgcc
+Libs.private: 
+Cflags: -I${includedir}

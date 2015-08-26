@@ -1,0 +1,14 @@
+prefix=../../VPlayer_library/jni/ffmpeg-build/armeabi
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.49.101
+Requires: libswresample >= 1.2.101, libavutil >= 54.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -lvo-amrwbenc -lvo-aacenc -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/libass/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/fribidi/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -L/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib -lass -lm -lfribidi -lfreetype -lm -lz -pthread -lgcc
+Libs.private: 
+Cflags: -I${includedir}

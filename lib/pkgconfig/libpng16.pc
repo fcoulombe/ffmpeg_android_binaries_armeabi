@@ -1,0 +1,11 @@
+prefix=/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/libpng/../../VPlayer_library/jni/ffmpeg-build/armeabi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/libpng16
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.6.15
+Libs: -L${libdir} -lpng16
+Libs.private: -lm -lz 
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi
+exec_prefix=/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi
+libdir=/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi/lib
+includedir=/home/fcoulombe/src/VPlayer_lib/ffmpeg_build/freetype2/../../VPlayer_library/jni/ffmpeg-build/armeabi/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 18.0.12
+Requires:
+Requires.private: libpng
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz
+Cflags: -I${includedir}/freetype2
